@@ -1,0 +1,46 @@
+第一章
+    1.1.2表名，和局部变量定义有点像，上级目录是数据库名
+         模式，关于数据库和表的布局及特性的信息
+    1.1.3表由列构成。数据类型限制储存在列中的数据种类
+    1.1.4表中数据按行储存
+    1.1.5主键，有点像一般的表格的最左列
+         任何列都可以作为主键
+第二章
+     2.1 SELECT 语句从XX中检索XX
+     2.2 检索单独列
+          SELECT prod_name
+          FROM Products;
+          从Products表中检索一个名为prod_name的列
+          SQL语句不区分大小写；
+          不同语句之间用分号隔开；
+          处理SQL语句时所有空格换行都被忽略；
+     2.3 检索多个列
+          列名之间用逗号隔开；
+          SELECT prod_id, prod_name, prod_price
+          FROM Products;
+          输出形式
+               prod_id   prod_name   prod_price
+               -------   ---------   ----------
+     2.4 检索所有列
+          SELECT *
+          FROM Products;
+     2.5 检索不同值（值相同但是重复出现的只会出现一次）
+          SELECT DISTINCT vend_id
+          FROM Products;
+          DISTINCT关键字作用于所有的列
+     2.6 限制结果
+          不同数据库实现形式不同
+     2.7 注释
+          SELECT prod_id   --注释样式1
+          FROM Products;
+
+          #注释样式2
+          SELECT prod_id
+          FROM Products;
+
+          /*注释
+          样式3*/
+          SELECT prod_id
+          FROM Products;
+第三章 排序检索数据
+     3.1 排序数据
